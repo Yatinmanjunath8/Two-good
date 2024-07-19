@@ -1,0 +1,335 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+#cursor{
+    height: 180px;
+    width: 180px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+    
+}
+#nav {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#nav-part1 {
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+#page1{
+   min-height: 100vh;
+   width: 100vw; 
+   position: relative;
+   padding: 0 2vw;
+   padding-top: 35vh;
+   
+}
+#page1 h1{
+    font-size: 14.8vw;
+    text-transform: uppercase;
+    font-family:futura;
+    line-height: 14vw;
+    letter-spacing: -4px;
+    
+    
+}
+#vid-container{
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+    position: relative;
+    margin-top: 1.8vh;
+}
+#vid-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#vid-container #play{
+    padding: 4.5vw 3.1vw;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: futura;
+    font-size: 3vw;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1;
+    scale: 1;
+    transform: translate(-50%,-50%);
+}
+#right-buttons{
+    display: flex;
+    flex-wrap: nowrap;
+   flex-direction: row;
+   align-content: end;
+}
+#right-buttons>h4{
+    padding-right: 5%;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+}
+#page2 .elem{
+    min-height: 100%;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.4;
+}
+#page2 .elem .dets{
+    height: 34px;
+    border-radius: 50px;
+    width: 60%;
+    position: absolute;
+      
+}
+#page2 .elem .dets p{
+    color: #000000;
+    font-size: 1.5vw;
+    font-family:futura;
+    display: inline;
+    position: relative;
+    top:5%;
+    left:3.6%;
+    
+    padding: 0 9px;
+}
+#page2 .elem #dets1{
+    background-color: #F4DFCE;
+}
+#page2 .elem #dets2{
+    background-color: #EDF3FF;
+}
+#page2 .elem #dets3{
+    background-color: #FFFFFF;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.child{
+    height: 54vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child img{
+    height: 100%;
+
+}
+@media  (max-width:600px){
+    #page1 {
+        min-height: 73vh; 
+        width: 100vw;
+        position: relative;
+        padding: 0 2vw;
+        padding-top: 25vh;
+    }
+    #nav {
+        width: 100%;  
+        position: fixed;
+        z-index: 99;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #nav #nav-part2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #links {
+        padding: 10px;
+        display: none;
+    }
+
+    #nav-part1 {
+        /* background-color: RED; */
+        height: 67px;
+        overflow: hidden;
+    }
+
+    #nav-part1 svg {
+        display: block;
+        height: 67px;
+        width: 80px;
+    }
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    #icons {
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #F7F7F7;
+    }
+
+    #nav-part2 #icons i {
+        font-size: 15px;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+
+     #vid-container{
+        height: 30vh;
+        width: 100%;
+        background-color: beige;
+        position: relative;
+        margin-top: 1.8vh;
+    }
+    #page2{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw 3vw;
+        justify-content: space-between;
+    }
+    #page2 .elem{
+        height: 80vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    #page2 .elem img{
+        height: 80%;
+        width: 100%;
+        object-fit: contain;
+        scale: 1.4;
+    
+    }
+    #page2 .elem .dets{
+        height: 55px;
+        border-radius: 50px;
+        width: 60%;
+        position: absolute;
+        z-index: 9;
+        backdrop-filter: blur(10px);
+          
+    }
+    #page2 .elem .dets p{
+        color: #000000;
+        font-size: 3.5vw;
+        font-family:futura;
+        display: inline;
+        position: relative;
+        top: 31%;
+        left: 11%;
+        transform: translate(-9%,-10%);
+        padding: 0 9px;
+    }
+    #page3 {
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .child {
+        height: 54vh;
+        width: 88vw;
+        position: relative;
+        padding: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .child img {
+        height: 100%;
+    }
+}
+
